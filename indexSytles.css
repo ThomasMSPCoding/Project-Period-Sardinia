@@ -1,0 +1,51 @@
+/*Background styling*/
+body{
+    text-align: center;
+    align-items: center;
+    margin: 0;
+}
+
+main{
+    margin: 20px;
+}
+
+
+/*Navigation bar styling*/
+nav{
+    display:flex ;
+    justify-content: center;
+
+}
+ul{
+    list-style-type: none;
+    background-color: bisque;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+ul a{
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color: rgb(254, 205, 145);
+}
+
+.navbar li{
+    margin: 0 10px;
+}
+
+footer{
+    background-color: bisque;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
