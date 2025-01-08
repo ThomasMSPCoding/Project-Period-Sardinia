@@ -5,6 +5,7 @@ body{
     margin: 0;
     padding: auto;
     height: 920px;
+    overflow-x: hidden;
 }
 
 main{
@@ -50,11 +51,12 @@ ul a{
 
 footer{
     background-color: bisque;
-    padding: 2px;
-    margin: auto;
+    padding: 20px;
+    display: flex;
     text-align: center;
-    position: fixed;
-    left: 0;
+    direction: none;
+    justify-content: center;
+    border-radius: 20px;
     bottom: 0;
     width: 100%;
 }
