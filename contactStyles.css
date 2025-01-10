@@ -88,3 +88,7 @@ h3{
     border: none;
     background: transparent;
   }
+
+li{
+    text-decoration: none;
+}
