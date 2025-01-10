@@ -21,6 +21,7 @@ body::before{
     z-index: -1;
 }
 
+/*For every tab, there is a new*/
 #index{
     background-image: url("Images/sardinia\ main\ page.png");
     background-size: cover;
