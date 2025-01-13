@@ -89,7 +89,7 @@ main{
 }
     
 iframe {
-    border: none; /* Optional: remove border from iframe */
+    border: none; 
 }
 
 header{
@@ -165,7 +165,6 @@ footer{
 /*Styling for the text boxes*/
 
 .whiteboxoutside{
-    background-color: white;
     padding: 10px;
     width: 80%;
     max-width: 1200px;
@@ -183,6 +182,21 @@ footer{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     text-align: justify;
+}
+
+.whiteboxoutside a{
+    text-decoration: none;
+    color: rgb(62, 62, 220);
+}
+
+.content-container {
+    background-color: transparent;
+    border: 2px solid bisque; /* Bisque border */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0px auto;
+    max-width: 950px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /*Creating own font*/
@@ -240,7 +254,6 @@ iframe {
     margin: 0px auto;
     padding: 20px;
     max-width: 800px;
-    background-color: #fff;
     border-radius: 8px;
     text-align: center;
 }
@@ -258,5 +271,26 @@ iframe {
     color: #555;
 }
 
+/*Javascript popupbox*/
+.popup-box {
+    display: none;
+    position: absolute;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    z-index: 1;
+    width: 200px;
+}
+
+.hover-word {
+    position: relative;
+    cursor: pointer;
+}
+
+.hover-word span{
+    color: blue;
+}
 
   
