@@ -301,3 +301,31 @@ iframe {
 .Adress{
     font-size: 8px;
 }
+
+/*Index website design*/
+.legend-container {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: center; /* Center items horizontally */
+}
+
+.legend-item img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.legend-item span {
+    font-size: 14px;
+}
