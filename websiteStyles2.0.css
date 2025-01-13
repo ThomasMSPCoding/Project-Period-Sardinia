@@ -166,7 +166,7 @@ footer{
 
 .whiteboxoutside{
     background-color: white;
-    padding: 40px;
+    padding: 10px;
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
@@ -175,7 +175,8 @@ footer{
 }
 
 .whiteboxoutside p{
-    margin-top:60px ;
+    margin-top:20px ;
+    margin-bottom: 20px;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -193,14 +194,16 @@ footer{
 
 /*Paleontology website design*/
 /*Video styling*/
-.video-container{
+.video-container {
     position: relative;
-    width:560px;
-    height: 315px;
-    margin: auto;
+   
+    margin: 20px auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.video-overlay{
+.video-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -211,19 +214,49 @@ footer{
     cursor: default;
 }
 
-iframe{
+iframe {
     position: relative;
     z-index: 0;
     border: none;
 }
 
-.video-container p{
-    margin-top:10px ;
+.video-container p {
+    margin-top: 20px; /* Adjust the value as needed */
+    margin-bottom: 20px; /* Adjust the value as needed */
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: small;
+    color: #555;
+    line-height: 1.6; /* Adjust the value as needed */
 }
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.image-container p {
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    color: #555;
+}
+
+
   
