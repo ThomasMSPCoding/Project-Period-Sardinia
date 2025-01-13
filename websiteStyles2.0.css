@@ -167,15 +167,21 @@ footer{
 .whiteboxoutside{
     background-color: white;
     padding: 40px;
-    margin: 0px;
-    width: 100%;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
 
 }
 
 .whiteboxoutside p{
-    margin-top:0px ;
+    margin-top:60px ;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    font-family: "Gloock";
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
 }
 
 /*Creating own font*/
@@ -184,4 +190,40 @@ footer{
     src: url(Gloock/Gloock-Regular.ttf) format("truetype");
 }
 
+
+/*Paleontology website design*/
+/*Video styling*/
+.video-container{
+    position: relative;
+    width:560px;
+    height: 315px;
+    margin: auto;
+}
+
+.video-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+    cursor: default;
+}
+
+iframe{
+    position: relative;
+    z-index: 0;
+    border: none;
+}
+
+.video-container p{
+    margin-top:10px ;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: small;
+}
   
