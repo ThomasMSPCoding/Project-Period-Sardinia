@@ -341,7 +341,7 @@ iframe {
 
 .textimage p {
     flex: 1;
-    margin-right: 0px;
+    margin-right: 20px;
     font-family: 'Times New Roman', Times, serif;
     text-align: justify;
 }
