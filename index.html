@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="websiteStyles2.0.css">
    <!-- <link rel="stylesheet" href="indexSytles.css"> --><!--Here you link the styling of the index webpage-->
     <script type="module" src="https://js.arcgis.com/embeddable-components/4.31/arcgis-embeddable-components.esm.js"></script> <!-- Add the ArcGIS API for JavaScript library -->
+    
 
 </head>
 <body id="index">
@@ -28,16 +29,51 @@
     </header>
 
     <main>
-        <div class="whiteboxoutside"
-            <p>This the project of sardinia, where we will include many scientific topics of sardinia</p>
-        </div>
-        
-        <div class="map-container">
-        <arcgis-embedded-map style="height:600px;width:700px;" item-id="edf77aa178d24e2e90f81da4bfb2dc06" theme="light" portal-url="https://um-fhs.maps.arcgis.com" ></arcgis-embedded-map>
+        <div class="content-container">
+            <div class="whiteboxoutside">
+                <p>Welcome to the Sardinian Scientific Website! (made up name, don’t know what to call it) Here we aim to provide a platform for scientists and tourists alike to discover what the island of Sardinia has to offer in terms of science.
+
+                    Sardinia is very well known for its culture and beauty, but did you know that it was once inhabited by the ancient shark Megalodon? It was also once populated by the very intriguing Nuragic civilization, who left behind amazing structures which can still be found on the island. Sardinia houses a vast amount of important paleontological and archaeological sites that can be explored, and the findings of which are displayed in museums such as the National Archaeological Museum of Cagliari. Sardinia also has plant and animal species that can only be found there! For example, there’s the Giara horses and spiny cornflower, amongst others. 
+                    </p>
+                <p>Explore the website to find more of the impressive science behind Sardinia!</p>
+            </div>
+            
+            <div class="map-container">
+            <arcgis-embedded-map style="height:600px;width:700px;" item-id="edf77aa178d24e2e90f81da4bfb2dc06" theme="light" portal-url="https://um-fhs.maps.arcgis.com" ></arcgis-embedded-map>
+            </div>
+            <div class="legend-container">
+                <!-- Legend item list -->
+                    <div class="legend-item">
+                        <img src="Images/icon-skull-image.png" alt="Error viweing image">
+                        <span>Paleontology</span>
+                    </div>
+                    <div class="legend-item">
+                        <img src="Images/icon-pot-image.png" alt="Error viweing image">
+                        <span>Archaeology</span>
+                    </div>
+                    <div class="legend-item">
+                        <img src="Images/icon-star-image.png" alt="Error viweing image">
+                        <span>Astronomy</span>
+                    </div>
+                    <div class="legend-item">
+                        <img src="Images/icon-rock-image.png" alt="Error viweing image">
+                        <span>Geology</span>
+                    </div>
+                    <div class="legend-item">
+                        <img src="Images/icon-parrot-image.png" alt="Error viweing image">
+                        <span>Reserves & Parks</span>
+                    </div>
+                    <div class="legend-item">
+                        <img src="Images/icon-fish-image.png" alt="Error viweing image">
+                        <span>Marine Biology</span>
+                    </div>
         </div>
     </main>
     <footer>
         <p>&copy; 2025 Project Period Sardinia. All rights reserved.</p>
     </footer>
+
+
+    <script src="popup.js"></script>
 </body>
 </html>
