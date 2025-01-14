@@ -19,7 +19,11 @@ h3{
     width: 70%;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
-/* From Uiverse.io by Cornerstone-04 */ 
+
+h3{
+  font-family: 'Times New Roman', Times, serif;
+}
+/* Animation of the MSP image */ 
 .box {
     width: 140px;
     height: auto;
