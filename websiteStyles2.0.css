@@ -308,21 +308,29 @@ iframe {
 }
 
 /*Index website design*/
+.parent-element { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .legend-container {
-    margin-top: 20px;
-    padding: 10px;
+    margin-top: 10px;
+    padding: 20px;
     border: 1px solid #ccc;
     background-color: #f9f9f9;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center items horizontally */
+    align-items: center; 
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .legend-item {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    justify-content: center; /* Center items horizontally */
+    justify-content: center;
 }
 
 .legend-item img {
