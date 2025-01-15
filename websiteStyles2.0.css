@@ -292,7 +292,7 @@ iframe {
 }
 
 .image-container2 img {
-    width: 50%; /* Adjust the percentage as needed for smaller size */
+    width: 50%; /*You can here change the size of the image*/
     height: auto;
     border-radius: 8px;
 }
