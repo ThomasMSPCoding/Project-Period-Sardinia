@@ -103,17 +103,19 @@ footer{
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
+.whiteboxoutside p{
+    font-family: 'Times New Roman', Times, serif;
+}
+
 /*Creating own font*/
 @font-face {
     font-family: "Gloock";
     src: url(Gloock/Gloock-Regular.ttf) format("truetype");
 }
-p{ 
-    font-family: "Gloock";
-}
+
 
 h3{
-    font-family: "Gloock";
+    font-family: 'Times New Roman', Times, serif;
 }
 .contact-list {
     list-style:none;
