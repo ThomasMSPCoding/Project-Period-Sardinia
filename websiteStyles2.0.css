@@ -70,7 +70,7 @@ body::before{
 }
 
 #Secret{
-    background-image: url("Images/astronomy-background-image.jpg");
+    background-image: url("Images/secret-rockybeach-image.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -272,7 +272,7 @@ iframe {
 }
 
 .image-container img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     border-radius: 8px;
 }

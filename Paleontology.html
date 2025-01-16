@@ -31,9 +31,9 @@
                 <p>Did you know that the open waters around Sardinia were once home to one of the largest predators that has ever existed in Earth’s seas known as <a href="https://www.nhm.ac.uk/discover/megalodon--the-truth-about-the-largest-shark-that-ever-lived.html"target="_blank"><i>Carcharocles megalodon</i></a>? (seen in Figure 1; Museo PARC, 2024) These predators were about 18 metres long (Pimiento & Balk, 2015), which is comparable to the length of a semi-truck with a trailer! </p>
             </div>
 
-            <div class="video-container">
-                <div class="video-overlay"></div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/lznmK6P2Rsg?start=87&end=99&autoplay=1&loop=1&mute=1&playlist=lznmK6P2Rsg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <!--Video section-->
+                <div class="video-container">
+                    <div id="player"></div>
             <p>Figure 1: Art by Fernando G. Baptista; Research by Ryan T. Willians, Fanna Gebreyesus; Source: STEPHEN J. GODFREY, CALVERT MARINE MUSEUM (National Geographic, 2016)
             </div>
             
@@ -97,5 +97,48 @@
     </footer>
 
     <script src="popup.js"></script>
+
+    <script>
+        // Load the IFrame Player API code asynchronously.
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        // Create an <iframe> (and YouTube player) after the API code downloads.
+        var player;
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '390',
+                width: '640',
+                videoId: 'lznmK6P2Rsg', // Updated video ID
+                playerVars: {
+                    'autoplay': 1,
+                    'controls': 1,
+                    'start': 87,
+                    'end': 99,
+                    'loop': 1,
+                    'mute': 1,
+                    'playlist': 'lznmK6P2Rsg' // Updated playlist ID
+                },
+                events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+        }
+
+        // The API will call this function when the video player is ready.
+        function onPlayerReady(event) {
+            event.target.playVideo();
+        }
+
+        // The API calls this function when the player's state changes.
+        function onPlayerStateChange(event) {
+            if (event.data === YT.PlayerState.ENDED) {
+                player.seekTo(0);
+            }
+        }
+    </script>
 </body>
 </html>
