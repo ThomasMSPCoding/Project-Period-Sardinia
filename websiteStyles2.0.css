@@ -69,6 +69,14 @@ body::before{
     background-attachment: fixed;
 }
 
+#Secret{
+    background-image: url("Images/astronomy-background-image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 /*Finito, adjusted background end*/
 
 main{
