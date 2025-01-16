@@ -485,3 +485,42 @@ body {
         transform: translateY(0);
     }
 }  
+
+
+/* Style for the references section */
+.references {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 0.875em;
+}
+
+.references h2 {
+    font-size: 1.25em;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.references p {
+    margin: 10px 0;
+    line-height: 1.6;
+    text-indent: -1.5em;
+    padding-left: 1.5em;
+}
+
+.references em {
+    font-style: italic;
+}
+
+.references a {
+    color: #0645ad;
+    text-decoration: none;
+}
+
+.references a:hover {
+    text-decoration: underline;
+}
